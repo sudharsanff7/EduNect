@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect - Tutoring Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-container" id="loginPage">
+        <div class="login-card">
+            <div class="login-logo">
+                <h1>EduConnect</h1>
+            </div>
+            <div class="login-options">
+                <button class="login-btn tutor-btn" onclick="showDashboard('tutor')">Continue as Tutor</button>
+                <button class="login-btn student-btn" onclick="showDashboard('student')">Continue as Student</button>
+            </div>
+            <div class="divider"><span>or</span></div>
+            <form id="loginForm" style="display: none;">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard (hidden initially) -->
+    <div class="dashboard" id="dashboard" style="display: none;">
+        <nav class="navbar">
+            <div class="logo">EduConnect</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">Tutors</a>
+                <a href="#">Messages</a>
+                <a href="#">About Us</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses..." id="searchInput" oninput="filterCourses()">
+                <span class="search-icon">🔍</span>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="section-title">
+                <h2>Browse Courses</h2>
+            </div>
+            
+            <div class="course-grid" id="courseGrid">
+                <!-- Courses will be added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Tutor Modal -->
+    <div class="modal" id="tutorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Tutor Details</h3>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div class="tutor-details">
+                <img src="https://placehold.co/100x100" alt="Portrait of tutor" class="tutor-image" id="tutorImg">
+                <div class="tutor-info">
+                    <h3 id="tutorName">Tutor Name</h3>
+                    <p class="tutor-specialty" id="tutorSpecialty">Specialty</p>
+                    <div class="tutor-about" id="tutorAbout">
+                        <p>About the tutor will be shown here.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tutor-contact">
+                <h4>Contact Information</h4>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span id="tutorEmail">email@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📞</span>
+                    <span id="tutorPhone">+1 (123) 456-7890</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
