@@ -288,7 +288,7 @@ const courses = [
             email: "paul.anderson@educonnect.com",
             phone: "+1 (555) 901-2345"
         }
-    },also for html ,, css , javascriopt , data analyst , cyber basics i want to add image
+    },
     {
         id: 25,
         title: "Cybersecurity Fundamentals",
