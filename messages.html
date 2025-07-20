@@ -122,16 +122,28 @@
     </div>
     </center>
 </nav>
-    <header>
-        <h1>Messages</h1>
-    </header>
-    <section class="messages-section">
-        <p>Stay connected with your tutors and students through our messaging system.</p>
+    <section style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center;">
+        <h1 style="font-family: 'Cinzel Decorative', cursive; color: #6a0dad; font-size: 3em; text-shadow: 3px 3px 6px #cbb3ff; animation: glow 2s infinite;">
+            Speak to Your AI Companion
+        </h1>
+        <p style="max-width: 600px; font-size: 1.2em; color: #333;">
+            Type your questions, ideas, or feedback and let <span style="color: #6a0dad; font-weight: bold;">EduConnect AI</span> guide you with <span style="color: #8e44ad; font-weight: bold; font-style: italic;">clarity</span>, <span style="color: #9b59b6; font-weight: bold;">insight</span>, and <span style="color: #7d3c98; font-weight: bold;">creativity</span>.
+        </p>
+        <textarea placeholder="Start your message..." style="margin-top: 20px; width: 80%; max-width: 600px; height: 150px; padding: 15px; font-size: 1em; border: 2px solid #6a0dad; border-radius: 10px; box-shadow: 0 4px 10px rgba(106, 13, 173, 0.2); resize: none;"></textarea>
+        <button style="margin-top: 20px; padding: 12px 24px; font-size: 1em; background: #6a0dad; color: white; border: none; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.3s ease;">
+            Send Message
+        </button>
     </section>
-    <section class="images">
-        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" alt="Chat Interface">
-        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Communication">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c69755f" alt="Group Discussion">
-    </section>
+
+    <style>
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #cbb3ff, 0 0 10px #cbb3ff; }
+            50% { text-shadow: 0 0 20px #6a0dad, 0 0 30px #cbb3ff; }
+            100% { text-shadow: 0 0 5px #cbb3ff, 0 0 10px #cbb3ff; }
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </body>
 </html>
