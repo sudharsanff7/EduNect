@@ -133,6 +133,13 @@ body {
 .nav-links {
     display: flex;
     gap: 2rem;
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Optional: removes default margin */
+}
+
+.nav-links li {
+    margin: 0.5rem 0; /* Optional: adds spacing between links */
 }
 
 .nav-links a {
