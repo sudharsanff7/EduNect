@@ -1,5 +1,5 @@
 const courses = [
-    { id: 1, title: "HTML Basics", description: "Learn the basics of HTML.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQI4cmxzQkYiA4OBsXZwvX1pe-6-abjnZFlalQ6hEYDRxZIAZYvKCMg2qKhwT3vB7H1I&usqp=CAU", tutor: { name: "John Doe", specialty: "Web Development", email: "john@example.com", phone: "+1 (123) 456-7890", image: "" } },
+    { id: 1, title: "HTML Basics", description: "Learn the basics of HTML.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREQI4cmxzQkYiA4OBsXZwvX1pe-6-abjnZFlalQ6hEYDRxZIAZYvKCMg2qKhwT3vB7H1I&usqp=CAU", tutor: { name: "Gopal Doe", specialty: "Web Development", email: "john@example.com", phone: "+1 (123) 456-7890", image: "" } },
 
     { id: 2, title: "CSS Fundamentals", description: "Understand CSS for styling web pages.", image: "https://img-c.udemycdn.com/course/750x422/5572332_6519_3.jpg", tutor: { name: "Jane Smith", specialty: "Web Design", email: "jane@example.com", phone: "+1 (123) 456-7891", image: "" } },
 
@@ -386,4 +386,8 @@ function filterCourses() {
         `;
         courseGrid.appendChild(courseCard);
     });
+}
+function showDashboard(userType) {
+    // Redirect to home page instead of showing dashboard
+    window.location.href = 'home.html';
 }
