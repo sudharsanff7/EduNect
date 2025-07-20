@@ -320,17 +320,15 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    body {
-        padding: 10px; /* Compact padding */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 600;
-        font-size: 14px; /* Smaller base font */
-    }
-
     .navbar {
         flex-direction: column;
         gap: 0.5rem;
         padding: 0.5rem;
+    }
+
+    .app-title {
+        font-weight: bold; /* Make bold */
+        margin: 1rem 0; /* Add spacing */
     }
 
     .nav-links {
@@ -339,6 +337,17 @@ body {
         flex-direction:row;
         align-items: center;
         text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Change to column for vertical stacking in mobile */
+        align-items: center;
+        font-weight: bold; /* Make links bold */
+        gap: 1rem; /* More space between links */
+    }
+
+    .nav-links a {
+        font-weight: bold;
     }
 
     .search-bar {
