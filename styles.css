@@ -109,16 +109,19 @@ body {
 }
 
 /* Navbar Styles */
+.app-title {
+    font-size: 2.5rem; /* Large font */
+    font-weight: bold;
+    color: #007bff; /* Highlight color, e.g., blue */
+    text-align: center;
+    padding: 1rem;
+    background-color: #f0f8ff; /* Light background for highlight */
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 1rem;
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--text-light);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 1.5rem; /* Larger padding for bigger header box */
 }
 
 .logo {
