@@ -6,10 +6,85 @@
     <title>EduConnect - Home</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        .about-section { max-width: 800px; margin: 0 auto; text-align: center; }
-        .images { display: flex; justify-content: space-around; margin-top: 20px; }
-        .images img { width: 300px; height: auto; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9ff;
+        }
+
+        .navbar {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #e6f0ff;
+        }
+
+        .app-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #0073ff;
+            margin-bottom: 15px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .search-bar input {
+            width: 350px;
+            padding: 12px 18px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .search-icon {
+            font-size: 18px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .images img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -27,18 +102,22 @@
             <span class="search-icon">🔍</span>
         </div>
     </nav>
+
     <header>
         <h1>Welcome to EduConnect</h1>
     </header>
+
     <section class="about-section">
         <h2>About This Application</h2>
         <p>EduConnect is a comprehensive tutoring platform designed to connect students with expert tutors across various subjects.</p>
     </section>
+
     <section class="images">
         <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Education Image 1">
         <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Education Image 2">
         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Education Image 3">
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
