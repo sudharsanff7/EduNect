@@ -152,12 +152,16 @@
             .features-grid {
                 display: flex;
                 flex-direction: column;
+                 align-items: center; /* Centers horizontally */
+                justify-content: center; /* Centers vertically if needed */
                 gap: 18px;
-                align-items: center;
+                width: 100%;
+                margin: 0 auto;
             }
             .feature-card {
                 width: 95vw;
                 max-width: 340px;
+                margin: 0 auto; /* Additional centering */
             }
             .feature-img {
                 width: 100%;
@@ -209,7 +213,6 @@
     </style>
     <!-- Top Tutors Section -->
     <section class="features" style="background-color: #f1f5f9;line-height: 3;">
-        <center>
         <h2 class="section-title">Our Top Rated Tutors</h2>
         
         <div class="features-grid">
@@ -277,5 +280,5 @@
         <div style="text-align: center; margin-top: 2rem;">
             <a href="#" class="cta-button">View All Tutors</a>
         </div>
-        </center>
+        
     </html>
